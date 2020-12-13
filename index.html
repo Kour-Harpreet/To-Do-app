@@ -1,0 +1,41 @@
+<!-- I am using James Shopping list code. -->
+<!-- https://github.com/TECHCareers-by-Manpower/js-practice/commit/fe700e2f7b42bfa806441bfd79861ae4201cdfac -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do List App</title>
+    <!-- Set the character set, so the browser knows which character set should be loaded and valid for this webpage. -->
+    <meta charset="UTF-8">
+    <!-- For modern responsive web development: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Data: -->
+    <meta name="description" content="To-Do List App.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap">
+    <!-- Style(s): -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Script(s): -->
+    <!-- defer attribute will cause this script to wait until the body is loaded before executing (important for DOM / element manipulation by scripts) -->
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body class="container" style="background-image: url('img/ornament.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;">
+    <h1>To-do App</h1>
+    <h2>To-Do form</h2>
+    <form>
+        <label for="todoInput">Add new Task:</label>
+        <input name="todoInput" type="text">
+        <button type="submit">Add item</button>
+    </form>
+    <p id="error-output"></p>
+    <h2>Active To-Dos</h2>
+    <ul id="activeList">
+    </ul>
+    <h2>Completed To-Dos</h2>
+    <ul id="completedUl"></ul>
+</body>
+
+</html>
